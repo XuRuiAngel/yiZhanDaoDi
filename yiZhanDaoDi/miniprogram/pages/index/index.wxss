@@ -46,7 +46,7 @@ page {
 image{
   position: absolute;
   width: 100%;
-  height: 1300rpx;
+  height: 1210rpx;
 }
 .up{
   position: absolute;
