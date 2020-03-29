@@ -8,5 +8,46 @@ page {
 }
 
 .start{
-
+  background: #01814A;
+  background-image: -webkit-linear-gradient(top, #01814A, #01b468);
+  background-image: -moz-linear-gradient(top, #01814A, #01b468);
+  background-image: -ms-linear-gradient(top, #01814A, #01b468);
+  background-image: -o-linear-gradient(top, #01814A, #01b468);
+  background-image: linear-gradient(to bottom, #01814A, #01b468);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 30px 12px 30px;
+  text-decoration: none;
+  margin-top: 800rpx;        
+  margin-left: 50rpx;    
+}
+.start:hover {
+  background: #01b468;
+  background-image: -webkit-linear-gradient(top, #01b468, #01814A);
+  background-image: -moz-linear-gradient(top, #01b468, #01814A);
+  background-image: -ms-linear-gradient(top, #01b468, #01814A);
+  background-image: -o-linear-gradient(top, #01b468, #01814A);
+  background-image: linear-gradient(to bottom, #01b468, #01814A);
+  color: #ffffff;
+  text-decoration: none;
+}
+.container{
+  width: 100%;
+  height: 600rpx;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+image{
+  position: absolute;
+  width: 100%;
+  height: 600rpx;
+}
+.up{
+  position: absolute;
+  z-index: 1;
 }

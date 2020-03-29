@@ -2,6 +2,10 @@
 <view class="container">
 
      <button class="start">开始答题</button>
+     <image src='/miniprogram/pages/index/user-unlogin.png'></image>
+     <view class='up'>
+     </view>
 
 
 </view>
+
