@@ -30,7 +30,9 @@ Page({
     bcC: '',
     bcD: '',
     but:false,
+    next:true,
     ny: 'true',
+    maxIndex:-1,
     defen: 0
 
   },
@@ -93,6 +95,7 @@ Page({
    nextQuestion: function () {
     var that = this;
      if (that.data.index < that.data.postList.length - 1) {
+
       this.setData({
         index: that.data.index + 1,
         bcA: that.data.bc_default,
@@ -100,9 +103,80 @@ Page({
         bcC: that.data.bc_default,
         bcD: that.data.bc_default,
         ny: 'true',
-        but:false
-
+        but:false,
+        next:true
+        
       });
+       if (that.data.index >= that.data.maxIndex) {
+         this.setData({ maxIndex: that.data.index + 1 });
+       }
+       else {
+         if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList[that.data.index].daan) {
+           if (that.data.userAnswer[that.data.index+1].answer == "A") {
+                 this.setData({
+                   bcA:that.data.bc_right
+                 })
+           }
+           if (that.data.userAnswer[that.data.index+1].answer == "B") {
+             this.setData({
+               bcB: that.data.bc_right
+             })
+           }
+           if (that.data.userAnswer[that.data.index+1].answer == "C") {
+             this.setData({
+               bcC: that.data.bc_right
+             })
+           }
+           if (that.data.userAnswer[that.data.index+1].answer == "D") {
+             this.setData({
+               bcD: that.data.bc_right
+             })
+           }
+         }
+         else{
+           if (that.data.userAnswer[that.data.index + 1].answer == "A") {
+             this.setData({
+               bcA: that.data.bc_wrong
+             })
+           }
+           if (that.data.userAnswer[that.data.index + 1].answer == "B") {
+             this.setData({
+               bcB: that.data.bc_wrong
+             })
+           }
+           if (that.data.userAnswer[that.data.index + 1].answer == "C") {
+             this.setData({
+               bcC: that.data.bc_wrong
+             })
+           }
+           if (that.data.userAnswer[that.data.index + 1].answer == "D") {
+             this.setData({
+               bcD: that.data.bc_wrong
+             })
+           }
+           if (that.data.postList[that.data.index].daan == "A") {
+             this.setData({
+               bcA: that.data.bc_right
+             })
+           }
+           if (that.data.postList[that.data.index].daan == "B") {
+             this.setData({
+               bcB: that.data.bc_right
+             })
+           }
+           if (that.data.postList[that.data.index].daan == "C") {
+             this.setData({
+               bcC: that.data.bc_right
+             })
+           }
+           if (that.data.postList[that.data.index].daan == "D") {
+             this.setData({
+               bcD: that.data.bc_right
+             })
+           }
+         }
+       }
+      
     }
   },
   lastQuestion: function () {
@@ -111,11 +185,78 @@ Page({
       this.setData({
         index: that.data.index - 1
       });
+      if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList[that.data.index].daan) {
+        if (that.data.userAnswer[that.data.index + 1].answer == "A") {
+          this.setData({
+            bcA: that.data.bc_right
+          })
+        }
+        if (that.data.userAnswer[that.data.index + 1].answer == "B") {
+          this.setData({
+            bcB: that.data.bc_right
+          })
+        }
+        if (that.data.userAnswer[that.data.index + 1].answer == "C") {
+          this.setData({
+            bcC: that.data.bc_right
+          })
+        }
+        if (that.data.userAnswer[that.data.index + 1].answer == "D") {
+          this.setData({
+            bcD: that.data.bc_right
+          })
+        }
+      }
+      else {
+        if (that.data.userAnswer[that.data.index + 1].answer == "A") {
+          this.setData({
+            bcA: that.data.bc_wrong
+          })
+        }
+        if (that.data.userAnswer[that.data.index + 1].answer == "B") {
+          this.setData({
+            bcB: that.data.bc_wrong
+          })
+        }
+        if (that.data.userAnswer[that.data.index + 1].answer == "C") {
+          this.setData({
+            bcC: that.data.bc_wrong
+          })
+        }
+        if (that.data.userAnswer[that.data.index + 1].answer == "D") {
+          this.setData({
+            bcD: that.data.bc_wrong
+          })
+        }
+        if (that.data.postList[that.data.index].daan == "A") {
+          this.setData({
+            bcA: that.data.bc_right
+          })
+        }
+        if (that.data.postList[that.data.index].daan == "B") {
+          this.setData({
+            bcB: that.data.bc_right
+          })
+        }
+        if (that.data.postList[that.data.index].daan == "C") {
+          this.setData({
+            bcC: that.data.bc_right
+          })
+        }
+        if (that.data.postList[that.data.index].daan == "D") {
+          this.setData({
+            bcD: that.data.bc_right
+          })
+        }
+      }
     }
   },
   btnOpClick: function (e) {
     var that = this;
     var select = e.currentTarget.id;
+    var obj={};
+    obj.answer=select;
+    that.data.userAnswer.push(obj);
     var jieg = that.data.postList[that.data.index].daan;
     if (select == jieg) {
       if (that.data.index < that.data.postList.length - 1) {
@@ -182,6 +323,7 @@ Page({
         
       }
       this.setData({ but: true });
+      this.setData({ next: false });
     }
 
   },
