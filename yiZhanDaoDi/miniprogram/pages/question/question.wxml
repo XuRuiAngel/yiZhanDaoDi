@@ -7,10 +7,10 @@
   <view hidden="{{ny}}">{{postList[index].daan}}</view>
 </scroll-view>
 <scroll-view>
-  <button id='A' bindtap="btnOpClick" style="background-color: {{bcA}};">{{postList[index].content[0]}}</button>
-  <button id='B' bindtap="btnOpClick" style="background-color: {{bcB}};">{{postList[index].content[1]}}</button>
-  <button id='C' bindtap="btnOpClick" style="background-color: {{bcC}};">{{postList[index].content[2]}}</button>
-  <button id='D' bindtap="btnOpClick" style="background-color: {{bcD}};">{{postList[index].content[3]}}</button>
+  <button id='A' bindtap="btnOpClick" style="background-color: {{bcA}};" disabled="{{but}}">{{postList[index].content[0]}}</button>
+  <button id='B' bindtap="btnOpClick" style="background-color: {{bcB}};" disabled="{{but}}">{{postList[index].content[1]}}</button>
+  <button id='C' bindtap="btnOpClick" style="background-color: {{bcC}};" disabled="{{but}}">{{postList[index].content[2]}}</button>
+  <button id='D' bindtap="btnOpClick" style="background-color: {{bcD}};" disabled="{{but}}">{{postList[index].content[3]}}</button>
 </scroll-view>
 <button class="push_button red" href="#" bindtap="lastQuestion">上一题</button>
 <button class="push_button blue" href="#" bindtap="nextQuestion">下一题</button>
