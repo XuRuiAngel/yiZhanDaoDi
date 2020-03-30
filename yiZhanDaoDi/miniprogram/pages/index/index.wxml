@@ -1,7 +1,7 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container"  >
 
-     <button class="start">开始答题</button>
+     <button class="start" bindtap='onTapDayWeather'>开始答题</button>
      <image src='beijing.png'></image>
      <view class='up'>
      </view>

@@ -9,3 +9,9 @@ Page({
   
 
 })
+onTapDayWeather: {
+  wx.navigateTo({
+    url: 'pages/question/question',
+  })
+}
+
