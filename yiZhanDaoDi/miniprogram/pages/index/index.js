@@ -5,13 +5,13 @@ Page({
   data: {
   
   },
-  
+  onTapDayWeather: function (e) {
+    wx.navigateTo({
+      url: '../question/question',
+    })
+  }
+
   
 
 })
-onTapDayWeather: {
-  wx.navigateTo({
-    url: 'pages/question/question',
-  })
-}
 
