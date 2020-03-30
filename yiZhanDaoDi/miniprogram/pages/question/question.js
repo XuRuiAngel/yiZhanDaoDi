@@ -86,7 +86,7 @@ Page({
   },
    nextQuestion: function () {
     var that = this;
-    if (that.data.index < postData.postList.length - 1) {
+     if (that.data.index < this.data.postList.postList.length - 1) {
       this.setData({
         index: that.data.index + 1,
         bcA: that.data.bc_default,
@@ -109,9 +109,9 @@ Page({
   btnOpClick: function (e) {
     var that = this;
     var select = e.currentTarget.id;
-    var jieg = postData.postList[that.data.index].daan;
+    var jieg = that.data.postList[that.data.index].daan;
     if (select == jieg) {
-      if (that.data.index < postData.postList.length - 1) {
+      if (that.data.index < this.data.postList.length - 1) {
         if (select == 'A') {
           this.setData({ bcA: that.data.bc_right });
         }
