@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <!--pages/question/question.wxml-->
 <text>pages/question/question.wxml</text>
+=======
+>>>>>>> e671335110cbbdef1bef97c6adab41b268389700
 <scroll-view>
   <view>{{postList[index].name}}</view>
   <view hidden="{{ny}}">{{postList[index].daan}}</view>
