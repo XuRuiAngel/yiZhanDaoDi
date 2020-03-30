@@ -1,2 +1,14 @@
-<!--pages/question/question.wxml-->
-<text>pages/question/question.wxml</text>
+<scroll-view>
+  <view>{{postList[index].name}}</view>
+  <view hidden="{{ny}}">{{postList[index].daan}}</view>
+</scroll-view>
+<scroll-view>
+  <button id='A' bindtap="btnOpClick" style="background-color: {{bcA}};">{{postList[index].content[0]}}</button>
+  <button id='B' bindtap="btnOpClick" style="background-color: {{bcB}};">{{postList[index].content[1]}}</button>
+  <button id='C' bindtap="btnOpClick" style="background-color: {{bcC}};">{{postList[index].content[2]}}</button>
+  <button id='D' bindtap="btnOpClick" style="background-color: {{bcD}};">{{postList[index].content[3]}}</button>
+</scroll-view>
+<button bindtap="lastQuestion">上一题</button>
+<button bindtap="nextQuestion">下一题</button>
+<button bindtap="xianshi">显示答案</button>
+<text>积分：每答对一题积2分，目前得分{{defen}}</text>
