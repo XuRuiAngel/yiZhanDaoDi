@@ -16,6 +16,11 @@ Page({
       "content": ["A", "B", "C", "D"]
     }
     ],
+    userAnswer:[{
+      "answer":"W"
+    }
+      
+    ],
     index: 0,
     bc_default: '#FBFBFB',
     bc_right: '#98FB98',
@@ -24,6 +29,7 @@ Page({
     bcB: '',
     bcC: '',
     bcD: '',
+    but:false,
     ny: 'true',
     defen: 0
 
@@ -86,14 +92,15 @@ Page({
   },
    nextQuestion: function () {
     var that = this;
-     if (that.data.index < this.data.postList.postList.length - 1) {
+     if (that.data.index < that.data.postList.length - 1) {
       this.setData({
         index: that.data.index + 1,
         bcA: that.data.bc_default,
         bcB: that.data.bc_default,
         bcC: that.data.bc_default,
         bcD: that.data.bc_default,
-        ny: 'true'
+        ny: 'true',
+        but:false
 
       });
     }
@@ -111,7 +118,7 @@ Page({
     var select = e.currentTarget.id;
     var jieg = that.data.postList[that.data.index].daan;
     if (select == jieg) {
-      if (that.data.index < this.data.postList.length - 1) {
+      if (that.data.index < that.data.postList.length - 1) {
         if (select == 'A') {
           this.setData({ bcA: that.data.bc_right });
         }
@@ -161,7 +168,22 @@ Page({
       else if (select == 'E') {
         this.setData({ bcE: that.data.bc_wrong });
       }
+      if(jieg=="A"){
+        this.setData({bcA:that.data.bc_right});
+      }
+      else if(jieg=="B"){
+        this.setData({ bcB: that.data.bc_right });
+      }
+      else if (jieg == "C") {
+        this.setData({ bcC: that.data.bc_right });
+      }
+      else if (jieg == "D") {
+        this.setData({ bcD: that.data.bc_right });
+        
+      }
+      this.setData({ but: true });
     }
+
   },
   gotonext: function () {
     wx.navigateTo({
