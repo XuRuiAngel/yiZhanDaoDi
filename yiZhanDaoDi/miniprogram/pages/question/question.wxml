@@ -3,7 +3,7 @@
 
 <text>pages/question/question.wxml</text>
 
-
+<image class='background' src="c.png" mode="aspectFill"></image>
 <scroll-view>
   <view>{{postList[index].name}}</view>
   <view hidden="{{ny}}">{{postList[index].daan}}</view>

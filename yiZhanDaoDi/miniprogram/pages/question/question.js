@@ -47,7 +47,16 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var that=this
+    this.setData({
 
+      bcA: that.data.bc_default,
+      bcB: that.data.bc_default,
+      bcC: that.data.bc_default,
+      bcD: that.data.bc_default,
+
+
+    });
   },
 
   /**
