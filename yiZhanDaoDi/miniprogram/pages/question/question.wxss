@@ -1,6 +1,6 @@
 /* pages/question/question.wxss */
 wxml{
-	background:#f0f0f0;
+	background-image: url(../pages/question/c.png);
 	padding:20px;
 }
 

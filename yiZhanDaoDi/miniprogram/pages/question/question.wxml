@@ -1,6 +1,8 @@
 
 <!--pages/question/question.wxml-->
+
 <text>pages/question/question.wxml</text>
+
 
 <scroll-view>
   <view>{{postList[index].name}}</view>
@@ -21,3 +23,4 @@
 
 
 <text>积分：每答对一题积2分，目前得分{{defen}}</text>
+
