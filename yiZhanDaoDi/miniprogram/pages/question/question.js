@@ -183,7 +183,9 @@ Page({
     var that = this;
     if (that.data.index > 0) {
       this.setData({
-        index: that.data.index - 1
+        index: that.data.index - 1,
+        but:true,
+        next:false
       });
       if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList[that.data.index].daan) {
         if (that.data.userAnswer[that.data.index + 1].answer == "A") {
