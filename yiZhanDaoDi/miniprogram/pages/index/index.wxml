@@ -1,11 +1,19 @@
 <!--index.wxml-->
 <view class="container"  >
 
-     <button class="start" bindtap='onTapDayWeather'>开始答题</button>
-     <image src='beijing.png'></image>
-     <view class='up'>
-     </view>
+     
+  <view>
+
+   <button  plain="true" bindtap='onTapDayWeather'>
+     <image class="start"  src='a.png'></image>
+   </button>
+   <button  plain="true">
+     <image class="look" src='b.png'></image>
+   </button>
+
+  </view>
 
 
 </view>
 
+    
