@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <view class="container"  >
 
+  <image  class="beijing" src='beijing.png'></image>
      
   <view>
 

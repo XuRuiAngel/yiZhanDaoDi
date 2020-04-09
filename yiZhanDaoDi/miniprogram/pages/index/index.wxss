@@ -19,13 +19,15 @@ button[plain]
 
 .start{
 
- margin: 0;
+ margin:-100px;
 
  width:300rpx;
 
  height: 300rpx;
 
- border: none;
+ -webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
 
 }
 
@@ -37,17 +39,30 @@ button[plain]
 
  height: 300rpx;
 
- border: none;
+ -webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+}
+
+.beijing{
+
+ margin: 0;
+
+ width:750rpx;
+
+ height: 600rpx;
+
+	border-radius:5px;
 
 }
 
 
 
 
-
 .container{
   width: 100%;
-  height: 1000rpx;
+  height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
