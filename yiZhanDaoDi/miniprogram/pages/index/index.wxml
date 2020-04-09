@@ -1,17 +1,18 @@
 <!--index.wxml-->
 <view class="container"  >
 
-  <image  class="beijing" src='beijing.png'></image>
-     
   <view>
-
-   <button  plain="true" bindtap='onTapDayWeather'>
+  <image  class="beijing" src='beijing.png'></image>
+  </view>
+     
+  <view  class="four">
+  
+   <button class="b1" plain="true" bindtap='onTapDayWeather'>
      <image class="start"  src='a.png'></image>
    </button>
-   <button  plain="true">
+   <button class="b1" plain="true">
      <image class="look" src='b.png'></image>
    </button>
-
   </view>
 
 

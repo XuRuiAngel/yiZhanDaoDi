@@ -18,8 +18,7 @@ Page({
     ],
     userAnswer:[{
       "answer":"W"
-    }
-      
+    }   
     ],
     index: 0,
     bc_default: '#FBFBFB',
@@ -92,6 +91,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  /**
+   * 下一题
+   */
    nextQuestion: function () {
     var that = this;
      if (that.data.index < that.data.postList.length - 1) {
@@ -179,11 +181,18 @@ Page({
       
     }
   },
+  /**
+   * 上一题
+   */
   lastQuestion: function () {
     var that = this;
     if (that.data.index > 0) {
       this.setData({
         index: that.data.index - 1,
+        bcA: that.data.bc_default,
+        bcB: that.data.bc_default,
+        bcC: that.data.bc_default,
+        bcD: that.data.bc_default,
         but:true,
         next:false
       });
@@ -253,6 +262,7 @@ Page({
       }
     }
   },
+
   btnOpClick: function (e) {
     var that = this;
     var select = e.currentTarget.id;
