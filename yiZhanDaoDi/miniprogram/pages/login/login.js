@@ -78,7 +78,8 @@ Page({
               'content-type': 'application/json' //默认值
             },
             success: function (res) {
-              console.log(res.data)
+              var app = getApp();
+              app.globalData.userId=res.data
             }
           })
         }

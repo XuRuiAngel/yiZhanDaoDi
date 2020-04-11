@@ -6,11 +6,13 @@ Page({
    */
   data: {
     postList:[ {
+      "id":0,
       "name":"测试",
       "daan":"A",
       "content":["A","B","C","D"]
     },
     {
+      "id": 1,
       "name": "测试2",
       "daan":"B",
       "content": ["A", "B", "C", "D"]
@@ -323,6 +325,22 @@ Page({
       }
     }
     else {
+      console.log(getApp().globalData.userId)
+     
+      wx.request({
+        url: 'http://127.0.0.1:8090/addRecord', //接口地址
+        data: {
+          userId: parseInt(getApp().globalData.userId),
+          questionId: that.data.postList[that.data.index].id
+          },
+        method:'POST',
+        header: {
+          "content-type": "application/x-www-form-urlencoded" //默认值
+        },
+        success: function (res) {
+          console.log(res.data)
+        }
+      })
       if (select == 'A') {
         this.setData({ bcA: that.data.bc_wrong });
       }

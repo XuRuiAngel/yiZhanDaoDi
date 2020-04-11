@@ -8,6 +8,8 @@ App({
 
     }
 
-    this.globalData = {}
+    this.globalData = {
+      udserId:1
+    }
   }
 })
