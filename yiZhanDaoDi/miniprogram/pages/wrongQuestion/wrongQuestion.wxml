@@ -1,0 +1,5 @@
+<!--pages/wrongQuestion/wrongQuestion.wxml-->
+<view class='hua' wx:for="{{questions}}" wx:for-item="item">
+       <text>题目： {{item.content}}
+       时间：{{item.time}}</text>
+</view>

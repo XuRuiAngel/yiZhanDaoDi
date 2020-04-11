@@ -331,7 +331,8 @@ Page({
         url: 'http://127.0.0.1:8090/addRecord', //接口地址
         data: {
           userId: parseInt(getApp().globalData.userId),
-          questionId: that.data.postList[that.data.index].id
+          questionId: that.data.postList[that.data.index].id,
+          content: that.data.postList[that.data.index].name
           },
         method:'POST',
         header: {

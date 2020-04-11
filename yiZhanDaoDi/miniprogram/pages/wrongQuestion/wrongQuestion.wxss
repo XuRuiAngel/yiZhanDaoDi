@@ -1,0 +1,27 @@
+.select {
+  height: 80rpx;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px dashed #5e5e62;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.hua {
+  height: 200rpx;
+  border-bottom: 1px dashed #5e5e62;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+.yuzhong {
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 80rpx;
+}

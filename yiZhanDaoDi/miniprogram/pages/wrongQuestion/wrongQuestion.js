@@ -1,13 +1,19 @@
-// pages/question.js
+// pages/wrongQuestion/wrongQuestion.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    questions:[{
+          time:"45464"
+    },
+    {
+         time:"54612"
+    }]
 
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -19,14 +25,16 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+       this.setData({
+         questions: getApp().globalData.questions
+       })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+         
   },
 
   /**

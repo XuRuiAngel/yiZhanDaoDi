@@ -10,7 +10,7 @@
    <button class="b1" plain="true" bindtap='onTapDayWeather'>
      <image class="start"  src='a.png'></image>
    </button>
-   <button class="b1" plain="true">
+   <button class="b1" plain="true" bindtap='onTapDayWeather2'>
      <image class="look" src='b.png'></image>
    </button>
   </view>
