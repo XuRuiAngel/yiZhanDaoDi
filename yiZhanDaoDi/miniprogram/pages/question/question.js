@@ -5,19 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    postList:[ {
-      "id":0,
-      "name":"测试",
-      "daan":"A",
-      "content":["A","B","C","D"]
-    },
-    {
-      "id": 1,
-      "name": "测试2",
-      "daan":"B",
-      "content": ["A", "B", "C", "D"]
-    }
-    ],
+    postList:null,
     userAnswer:[{
       "answer":"W"
     }   
@@ -50,13 +38,14 @@ Page({
    */
   onReady: function () {
     var that=this
+
     this.setData({
 
       bcA: that.data.bc_default,
       bcB: that.data.bc_default,
       bcC: that.data.bc_default,
       bcD: that.data.bc_default,
-
+      postList: getApp().globalData.question
 
     });
   },
@@ -328,7 +317,7 @@ Page({
       console.log(getApp().globalData.userId)
      
       wx.request({
-        url: 'http://127.0.0.1:8090/addRecord', //接口地址
+        url: 'http://47.99.79.253:8090/addRecord', //接口地址
         data: {
           userId: parseInt(getApp().globalData.userId),
           questionId: that.data.postList[that.data.index].id,
