@@ -122,7 +122,10 @@ Page({
          this.setData({ maxIndex: that.data.index + 1 });
        }
        else {
-         if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList[that.data.index].daan) {
+         this.setData({
+           but: true,
+         });
+         if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList                      [that.data.index].daan) {
            if (that.data.userAnswer[that.data.index+1].answer == "A") {
                  this.setData({
                    bcA:that.data.bc_right
@@ -293,6 +296,8 @@ Page({
         else if (select == 'D') {
           this.setData({ bcD: that.data.bc_right });
         }
+        this.setData({ but: true });
+        this.setData({ next: false });
         that.nextQuestion();
         this.setData({
           defen: that.data.index * 2
@@ -311,7 +316,10 @@ Page({
         else if (select == 'D') {
           this.setData({ bcD: that.data.bc_right });
         }
+        this.setData({ but: true });
+        this.setData({ next: false });
         that.gotonext();
+        
       }
     }
     else {
