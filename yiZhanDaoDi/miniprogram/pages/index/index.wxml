@@ -7,11 +7,17 @@
      
   <view  class="four">
   
-   <button class="b1" plain="true" bindtap='onTapDayWeather'>
-     <image class="start"  src='a.png'></image>
+   <button class="b1"  bindtap='onTapDayWeather'>
+     <view class="inner_b1">
+     <view><image class="start"  src='a.png'></image></view>
+     <view><text>开始答题</text></view>
+     </view>
    </button>
-   <button class="b1" plain="true" bindtap='onTapDayWeather2'>
-     <image class="look" src='b.png'></image>
+   <button class="b1"  bindtap='onTapDayWeather2'>
+    <view class="inner_b1">
+     <view><image class="look" src='b.png'></image></view>
+     <view><text>错题集</text></view>
+      </view>
    </button>
   </view>
 

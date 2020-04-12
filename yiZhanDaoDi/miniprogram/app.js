@@ -11,7 +11,8 @@ App({
     this.globalData = {
       udserId:1,
       questions:null,
-      question:null
+      question:null,
+      q:null,
     }
   }
 })

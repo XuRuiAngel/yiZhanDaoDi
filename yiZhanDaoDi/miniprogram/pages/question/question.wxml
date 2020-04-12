@@ -1,7 +1,7 @@
 
 <!--pages/question/question.wxml-->
 
-<text>pages/question/question.wxml</text>
+
 
 <image class='background' src="c.png" mode="aspectFill"></image>
 <scroll-view>
@@ -17,10 +17,6 @@
 <button class="push_button red" href="#" bindtap="lastQuestion">上一题</button>
 
 <button class="push_button orange" href="#" bindtap="nextQuestion" disabled="{{next}}">下一题</button>
-<button bindtap="xianshi">显示答案</button>
-
-
-
 
 <text>积分：每答对一题积2分，目前得分{{defen}}</text>
 

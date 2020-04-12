@@ -1,5 +1,7 @@
 <!--pages/wrongQuestion/wrongQuestion.wxml-->
 <view class='hua' wx:for="{{questions}}" wx:for-item="item">
+       <button id="{{item.questionId}}" bindtap='onTapDayWeather'>
        <text>题目： {{item.content}}
        时间：{{item.time}}</text>
+       </button>
 </view>

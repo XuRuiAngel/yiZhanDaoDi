@@ -11,23 +11,38 @@ page {
 
 .b1{
   width:30%;
-  height:100px;
+  height:160px;
+  border:none
+  
 }
 .b2{
   width:30%;
-  height:100px;
+  height:150px;
+}
+.b1::after{
+  border: none;
 }
 .four{
   display: flex;
 }
+.inner_b1{
+  display: flex;
+  flex-direction: column; 
+}
 .start{
-width:100%;
-height:100%; 
+  background: no-repeat center 0rpx;
+
+  width: 150rpx;
+  height: 150rpx;
+  margin-left:30rpx;
 }
 
 .look{
-width:100%;
-height:100%; 
+  background: no-repeat center 0rpx;
+
+ width: 152rpx;
+  height: 152rpx;
+  margin-left:30rpx;
 
 
 }

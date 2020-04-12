@@ -1,19 +1,13 @@
-// pages/wrongQuestion/wrongQuestion.js
+// pages/wrongQuestion_inner/wrongQuestion_inner.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    questions:[{
-          time:"45464"
-    },
-    {
-         time:"54612"
-    }]
-
+     question:null
   },
-  
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -25,16 +19,16 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-       this.setData({
-         questions: getApp().globalData.questions
-       })
+    this.setData({
+      question: getApp().globalData.q
+    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-         
+
   },
 
   /**
@@ -70,27 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
- 
-  onTapDayWeather:function(e){
-    wx.request({
-      url: 'http://47.99.79.253:8090/getProblem', //接口地址
-      data: { id: e.currentTarget.id },
-      header: {
-        'content-type': 'application/json' //默认值
-      },
-      success: function (res) {
-        var app = getApp();
-        app.globalData.q = res.data
-        console.log(res.data)
-      }
-    })
-
-    
-    wx.navigateTo({
-      url: '../wrongQuestion_inner/wrongQuestion_inner',
-    })
   }
-  
 })

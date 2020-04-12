@@ -4,7 +4,8 @@
     "pages/login/login",
     "pages/index/index",
     "pages/question/question",
-   "pages/wrongQuestion/wrongQuestion"
+    "pages/wrongQuestion/wrongQuestion",
+    "pages/wrongQuestion_inner/wrongQuestion_inner"
     
    
     
