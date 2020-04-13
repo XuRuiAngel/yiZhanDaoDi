@@ -2,8 +2,7 @@
 <!--pages/question/question.wxml-->
 
 
-
-
+<view class='background'>
 <scroll-view>
   <view class='timuziti'>{{postList[index].name}}</view>
   <view hidden="{{ny}}">{{postList[index].daan}}</view>
@@ -18,5 +17,6 @@
 
 <button class="push_button orange" href="#" bindtap="nextQuestion" disabled="{{next}}">下一题</button>
 
-<text clsas='jifenziti'>积分：每答对一题积2分，目前得分{{defen}}</text>
+<text class='jifenziti'>积分：每答对一题积2分，目前得分{{defen}}</text>
 
+</view>
