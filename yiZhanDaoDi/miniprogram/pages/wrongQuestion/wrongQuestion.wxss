@@ -12,6 +12,15 @@
   padding: 0 10rpx;
   box-sizing: border-box;
 }
+.timu{
+  color: #FFE4B5;
+  font-size: 40rpx;
+  
+}
+.shijian{
+  color:#FFA07A;
+  font-size: 25rpx;
+}
 .hua {
   height: 200rpx;
   border-bottom: 1px dashed #5e5e62;
@@ -19,9 +28,14 @@
   margin: 0 auto;
   padding-left: 10rpx;
   box-sizing: border-box;
+  background: #008B8B;
 }
 .yuzhong {
   color: #fff;
   font-size: 32rpx;
   line-height: 80rpx;
+}
+.ziti {
+  vertical-align: left;
+
 }

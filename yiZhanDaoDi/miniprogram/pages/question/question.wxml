@@ -3,9 +3,9 @@
 
 
 
-<image class='background' src="c.png" mode="aspectFill"></image>
+
 <scroll-view>
-  <view>{{postList[index].name}}</view>
+  <view class='timuziti'>{{postList[index].name}}</view>
   <view hidden="{{ny}}">{{postList[index].daan}}</view>
 </scroll-view>
 <scroll-view>
@@ -18,5 +18,5 @@
 
 <button class="push_button orange" href="#" bindtap="nextQuestion" disabled="{{next}}">下一题</button>
 
-<text>积分：每答对一题积2分，目前得分{{defen}}</text>
+<text clsas='jifenziti'>积分：每答对一题积2分，目前得分{{defen}}</text>
 

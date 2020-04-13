@@ -9,6 +9,12 @@ body {
 	margin: 0 auto;
   background-image: url(c.png);
 }
+.timuziti{
+  color: #2C7982;
+  font-size: 40rpx;
+  font-weight: bold;
+
+}
 .background {
 width: 100%;
 height: 100%;

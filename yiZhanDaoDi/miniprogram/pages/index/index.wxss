@@ -7,7 +7,9 @@ page {
   justify-content: flex-start;
 }
 
-
+.ziti{
+  color: #FFE4B5;
+}
 
 .b1{
   width:30%;
