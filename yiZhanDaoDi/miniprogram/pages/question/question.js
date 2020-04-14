@@ -20,9 +20,10 @@ Page({
     bcD: '',
     but:false,
     next:true,
-    ny: 'true',
+    end: 'true',
     maxIndex:-1,
-    defen: 0
+    number:null
+
 
   },
 
@@ -182,6 +183,10 @@ Page({
          }
        }
       
+    }else{
+      this.setData({
+        end:false
+      })
     }
   },
   /**
@@ -274,6 +279,11 @@ Page({
     that.data.userAnswer.push(obj);
     var jieg = that.data.postList[that.data.index].daan;
     if (select == jieg) {
+      
+      getApp().globalData.num = getApp().globalData.num+1
+      this.setData({
+        number:that.data.number+1
+      })
       if (that.data.index < that.data.postList.length - 1) {
         if (select == 'A') {
           this.setData({ bcA: that.data.bc_right });
@@ -290,9 +300,7 @@ Page({
         this.setData({ but: true });
         this.setData({ next: false });
         that.nextQuestion();
-        this.setData({
-          defen: that.data.index * 2
-        })
+        
       }
       else {
         if (select == 'A') {
@@ -309,7 +317,8 @@ Page({
         }
         this.setData({ but: true });
         this.setData({ next: false });
-        that.gotonext();
+        this.setData({end:false});
+        
         
       }
     }
@@ -366,7 +375,7 @@ Page({
   },
   gotonext: function () {
     wx.navigateTo({
-      url: './../tiaozhuan/tiaozhuan',
+      url: '../end/end',
     })
   },
   xianshi: function () {

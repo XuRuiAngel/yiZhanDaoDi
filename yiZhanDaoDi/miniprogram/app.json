@@ -5,7 +5,8 @@
     "pages/index/index",
     "pages/question/question",
     "pages/wrongQuestion/wrongQuestion",
-    "pages/wrongQuestion_inner/wrongQuestion_inner"
+    "pages/wrongQuestion_inner/wrongQuestion_inner",
+    "pages/end/end"
     
    
     

@@ -13,6 +13,7 @@ App({
       questions:null,
       question:null,
       q:null,
+      num:0
     }
   }
 })
