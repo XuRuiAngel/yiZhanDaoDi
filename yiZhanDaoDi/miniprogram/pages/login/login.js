@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      this.init();
+      
   },
 
   /**
@@ -89,11 +89,12 @@ Page({
 /**
  * 定义画布，初始化
  */
-init(){
+/** 
+init:function(){
   can=wx.createCanvasContext('canvas');
   this.starDraw();
-};
-starDraw(){
+},
+starDraw:function(){
       setInterval(function(){
         picOn +=1;
         if(picOn>=7){
@@ -107,3 +108,4 @@ starDraw(){
         can.draw();
       },500)
 }
+*/

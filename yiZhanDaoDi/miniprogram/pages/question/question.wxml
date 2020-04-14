@@ -1,18 +1,13 @@
 
 <!--pages/question/question.wxml-->
 
-
-<<<<<<< HEAD
 <view class='background'>
-=======
 <view hidden="{{end}}"> 
 
 <text >恭喜通过！</text>
 <text>您共答对{{number}}道题</text>
 
 </view>
-
->>>>>>> 4f5a7969f79609e5d7035eb8d9e57f22f6a7462e
 <scroll-view>
   <view class='timuziti'>{{postList[index].name}}</view>
 
@@ -27,10 +22,6 @@
 
 <button class="push_button orange" href="#" bindtap="nextQuestion" disabled="{{next}}">下一题</button>
 
-<<<<<<< HEAD
 <text class='jifenziti'>积分：每答对一题积2分，目前得分{{defen}}</text>
-=======
-
->>>>>>> 4f5a7969f79609e5d7035eb8d9e57f22f6a7462e
 
 </view>
