@@ -2,8 +2,13 @@
 
 
 <image class='background' src="end.jpg" mode="aspectFill" >
-  <view>恭喜通过</view>
-  <view>您共答对{{num}}道题!</view>
+ 
 </image>
 
    
+ <view><text>恭喜通过</text></view>
+  <view>您共答对{{num}}道题!</view>
+
+  <button bindtap='onTapDayWeather'>
+      确定
+  </button>
