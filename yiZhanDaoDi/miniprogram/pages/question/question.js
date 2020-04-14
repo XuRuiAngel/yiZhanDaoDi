@@ -184,9 +184,8 @@ Page({
        }
       
     }else{
-      this.setData({
-        end:false
-      })
+      this.gotonext()
+     
     }
   },
   /**
@@ -318,7 +317,7 @@ Page({
         this.setData({ but: true });
         this.setData({ next: false });
         this.setData({end:false});
-        
+        this.gotonext();
         
       }
     }
