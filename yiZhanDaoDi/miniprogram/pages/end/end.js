@@ -68,5 +68,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onTapDayWeather:function(){
+    wx.navigateTo({
+      url: '../index/index',
+    })
   }
 })
