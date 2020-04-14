@@ -1,1 +1,9 @@
 /* pages/end/end.wxss */
+.background{
+  
+ margin: 0;
+ width:1000rpx;
+ height: 1500rpx;
+ border-radius:5px;
+ z-index: -1;
+}

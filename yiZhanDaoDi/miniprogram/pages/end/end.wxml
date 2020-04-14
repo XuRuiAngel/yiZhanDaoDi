@@ -1,3 +1,9 @@
 <!--pages/end/end.wxml-->
+
+
+<image class='background' src="end.jpg" >
 <view>恭喜通过</view>
 <view>您共答对{{num}}道题!</view>
+</image>
+
+   
