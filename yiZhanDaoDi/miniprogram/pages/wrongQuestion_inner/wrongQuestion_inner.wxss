@@ -1,1 +1,39 @@
 /* pages/wrongQuestion_inner/wrongQuestion_inner.wxss */
+.background{
+  height: 1500rpx;
+  border-bottom: 1px dashed #5e5e62;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+  background: #008B8B;
+  z-index: -1
+}
+
+.question{
+  color: #FFE4B5;
+  font-size: 40rpx;
+  font-weight: bold;
+  z-index: 1
+}
+
+.right{
+  color:#FFA07A;
+  font-size: 50rpx;
+  font-weight: bold;
+  z-index:1;
+}
+
+.name{
+  color: #FFE4B5;
+  font-size: 40rpx;
+  font-weight: bold;
+  z-index:1;
+}
+.a{
+  width: 250%;
+  height: 300%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: 0;
+}

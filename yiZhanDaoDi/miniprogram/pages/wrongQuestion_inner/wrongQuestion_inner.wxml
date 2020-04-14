@@ -1,9 +1,12 @@
 <!--pages/wrongQuestion_inner/wrongQuestion_inner.wxml-->
- <view>{{question.name}}</view>
+<view class="background">
+ <view class='name'>{{question.name}}</view>
 
-<view>{{question.content[0]}}</view>
-<view>{{question.content[1]}}</view>
-<view>{{question.content[2]}}</view>
-<view>{{question.content[3]}}</view>
+<view class="question">{{question.content[0]}}</view>
+<view class="question">{{question.content[1]}}</view>
+<view class="question">{{question.content[2]}}</view>
+<view class="question">{{question.content[3]}}</view>
 
-<view>正确答案:{{question.daan}}</view>
+<view class="right">正确答案:{{question.daan}}</view>
+</view>
+<image class='a' src="star.png" mode="aspectFill"></image>
