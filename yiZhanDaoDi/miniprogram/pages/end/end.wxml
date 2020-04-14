@@ -5,10 +5,12 @@
  
 </image>
 
-   
- <view><text>恭喜通过</text></view>
-  <view>您共答对{{num}}道题!</view>
-
-  <button bindtap='onTapDayWeather'>
-      确定
+  <view class='wuyong'></view>
+  <view class="c"><text>恭喜通过</text></view>
+  <view class="r">您共答对{{num}}道题!</view>
+  <view class='wu'></view>
+  <button class="push_button back" href="#" bindtap='onTapDayWeather'>
+     <text class="ziti"> 确定</text>
   </button>
+
+  
