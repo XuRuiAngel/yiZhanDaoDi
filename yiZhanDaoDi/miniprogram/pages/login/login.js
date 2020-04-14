@@ -84,28 +84,29 @@ Page({
           })
         }
       })
+  },
+  init: function () {
+    can = wx.createCanvasContext('canvas');
+    this.starDraw();
+  },
+  starDraw: function () {
+    setInterval(function () {
+      picOn += 1;
+      if (picOn >= 7) {
+        picOn = 0;
+      }
+      for (var i = 1; i <= 60; i++) {
+        var x = Math.random() * 500;
+        var y = Math.random() * 800;
+        can.drawImage('star.png', picOn * 7, 0, 7, 7, x, y, 7, 7);
+      }
+      can.draw();
+    }, 500)
   }
+
+
 });
 /**
  * 定义画布，初始化
  */
-/** 
-init:function(){
-  can=wx.createCanvasContext('canvas');
-  this.starDraw();
-},
-starDraw:function(){
-      setInterval(function(){
-        picOn +=1;
-        if(picOn>=7){
-          picOn=0;
-        }
-        for(var i=1;i<=60;i++){
-          var x = Math.random() * 500;
-          var y = Math.random() * 800;
-            can.drawImage('star.png',picOn * 7,0,7,7,x,y,7,7);
-        }
-        can.draw();
-      },500)
-}
-*/
+
