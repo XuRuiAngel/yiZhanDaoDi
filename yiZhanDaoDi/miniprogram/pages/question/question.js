@@ -116,6 +116,8 @@ Page({
        else {
          this.setData({
            but: true,
+           next:false
+
          });
          if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList                      [that.data.index].daan) {
            if (that.data.userAnswer[that.data.index+1].answer == "A") {
