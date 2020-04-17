@@ -327,7 +327,7 @@ Page({
       console.log(getApp().globalData.userId)
      
       wx.request({
-        url: 'http://47.99.79.253:8090/addRecord', //接口地址
+        url: 'https://47.99.79.253:8090/addRecord', //接口地址
         data: {
           userId: parseInt(getApp().globalData.userId),
           questionId: that.data.postList[that.data.index].id,

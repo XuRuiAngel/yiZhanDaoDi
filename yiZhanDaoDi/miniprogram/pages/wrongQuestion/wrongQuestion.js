@@ -75,7 +75,7 @@ Page({
  
   onTapDayWeather:function(e){
     wx.request({
-      url: 'http://47.99.79.253:8090/getProblem', //接口地址
+      url: 'https://47.99.79.253/getProblem', //接口地址
       data: { id: e.currentTarget.id },
       header: {
         'content-type': 'application/json' //默认值

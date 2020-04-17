@@ -72,7 +72,7 @@ Page({
           console.log(res.code)
           //发送请求
           wx.request({
-            url: 'http://47.99.79.253:8090/unionid', //接口地址
+            url: 'https://47.99.79.253:8090/unionid', //接口地址
             data: { code: res.code },
             header: {
               'content-type': 'application/json' //默认值
