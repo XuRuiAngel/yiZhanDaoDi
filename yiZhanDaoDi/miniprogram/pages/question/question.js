@@ -110,10 +110,10 @@ Page({
         next:true
         
       });
-       if (that.data.index >= that.data.maxIndex) {
-         this.setData({ maxIndex: that.data.index + 1 });
+       if (that.data.index > that.data.maxIndex) {
+         this.setData({ maxIndex: that.data.index });
        }
-       else {
+       else if(that.data.index<that.data.maxIndex){
          this.setData({
            but: true,
            next:false
@@ -181,6 +181,89 @@ Page({
              this.setData({
                bcD: that.data.bc_right
              })
+           }
+         }
+       }
+       else {
+         if (that.data.userAnswer[that.data.index + 1].answer==null){
+         this.setData({
+           bcA: that.data.bc_default,
+           bcB: that.data.bc_default,
+           bcC: that.data.bc_default,
+           bcD: that.data.bc_default,
+           ny: 'true',
+           but: false,
+           next: true
+         });
+         }
+         else{
+           this.setData({
+             but:true,
+             next:false
+           })
+           if (that.data.userAnswer[that.data.index + 1].answer == that.data.postList[that.data.index].daan) {
+             if (that.data.userAnswer[that.data.index + 1].answer == "A") {
+               this.setData({
+                 bcA: that.data.bc_right
+               })
+             }
+             if (that.data.userAnswer[that.data.index + 1].answer == "B") {
+               this.setData({
+                 bcB: that.data.bc_right
+               })
+             }
+             if (that.data.userAnswer[that.data.index + 1].answer == "C") {
+               this.setData({
+                 bcC: that.data.bc_right
+               })
+             }
+             if (that.data.userAnswer[that.data.index + 1].answer == "D") {
+               this.setData({
+                 bcD: that.data.bc_right
+               })
+             }
+           }
+           else {
+             if (that.data.userAnswer[that.data.index + 1].answer == "A") {
+               this.setData({
+                 bcA: that.data.bc_wrong
+               })
+             }
+             if (that.data.userAnswer[that.data.index + 1].answer == "B") {
+               this.setData({
+                 bcB: that.data.bc_wrong
+               })
+             }
+             if (that.data.userAnswer[that.data.index + 1].answer == "C") {
+               this.setData({
+                 bcC: that.data.bc_wrong
+               })
+             }
+             if (that.data.userAnswer[that.data.index + 1].answer == "D") {
+               this.setData({
+                 bcD: that.data.bc_wrong
+               })
+             }
+             if (that.data.postList[that.data.index].daan == "A") {
+               this.setData({
+                 bcA: that.data.bc_right
+               })
+             }
+             if (that.data.postList[that.data.index].daan == "B") {
+               this.setData({
+                 bcB: that.data.bc_right
+               })
+             }
+             if (that.data.postList[that.data.index].daan == "C") {
+               this.setData({
+                 bcC: that.data.bc_right
+               })
+             }
+             if (that.data.postList[that.data.index].daan == "D") {
+               this.setData({
+                 bcD: that.data.bc_right
+               })
+             }
            }
          }
        }
