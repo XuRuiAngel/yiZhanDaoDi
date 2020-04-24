@@ -84,13 +84,14 @@ Page({
         var app = getApp();
         app.globalData.q = res.data
         console.log(res.data)
+        wx.navigateTo({
+          url: '../wrongQuestion_inner/wrongQuestion_inner',
+        })
       }
     })
 
     
-    wx.navigateTo({
-      url: '../wrongQuestion_inner/wrongQuestion_inner',
-    })
+
   }
   
 })
