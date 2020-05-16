@@ -1,0 +1,50 @@
+/* pages/all/all.wxss */
+page.top { 
+
+  background-color:rgba(230, 49, 49, 0.884)     /* 你要设置的颜色 */
+
+}
+.u-wrp-bnr {
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 100rpx;
+  background: #f0f0f0;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items:center;  
+}
+.u-img-slide {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items:center;  
+
+}
+.but{
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  width: 100%;
+}
+.section{
+  display: flex;
+  width: 100%;
+  flex-direction:column
+}
+.hua{
+  width: 100%;
+  display: flex;
+}

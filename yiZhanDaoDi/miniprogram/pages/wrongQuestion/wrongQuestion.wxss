@@ -14,7 +14,7 @@
 }
 .timu{
   color: #FFE4B5;
-  font-size: 40rpx;
+  font-size: 30rpx;
   
 }
 .shijian{
@@ -39,3 +39,4 @@
   vertical-align: left;
 
 }
+

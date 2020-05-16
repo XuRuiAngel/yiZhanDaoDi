@@ -68,3 +68,16 @@ page {
   padding: 0;
   position: relative;
 }
+
+.u-wrp-bnr {
+  width: 100%;
+
+  display: block;
+  position: relative;
+  top: 100rpx;
+  background: #f0f0f0;
+}
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+}

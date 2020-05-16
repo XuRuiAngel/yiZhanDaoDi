@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showOrHidden:false,
     questions:[{
           time:"45464"
     },
@@ -18,9 +19,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var jslength = 0;
+    for (var js2 in getApp().globalData.questions) {
+      jslength++;
+    }
+    if (jslength == 0) {
+        this.setData({
+          showOrHidden:true
+        })
+    }
   },
-
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -75,7 +84,7 @@ Page({
  
   onTapDayWeather:function(e){
     wx.request({
-      url: 'https://47.99.79.253:8090/getProblem', //接口地址
+      url: 'https://szaxr.cn/getProblem', //接口地址
       data: { id: e.currentTarget.id },
       header: {
         'content-type': 'application/json' //默认值

@@ -1,0 +1,18 @@
+<!--pages/all/all.wxml-->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block wx:for="{{sections}}" wx:for-index="index">
+    <swiper-item class="item">
+      <image id='{{item.id}}'src='{{item.mainUrl}}' class='u-img-slide' mode='widthFix'                                   bindtap='onTap'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<text>\n\n</text>
+
+<view class='hua'  wx:for="{{sections}}" wx:for-item="item">
+       <button class="but" id="{{item.id}}" bindtap='onTapDayWeather'>
+       <view class="section">
+       <view><text class='timu'>{{item.name}}</text></view>
+       <image class='img' mode='widthFix' src='{{item.mainUrl}}'></image>   
+       </view>
+       </button>
+</view>

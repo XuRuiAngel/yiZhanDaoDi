@@ -64,15 +64,21 @@ Page({
 
   },
     onTapDayWeather: function (e) {
-    wx.navigateTo({
-      url: '../index/index',
-    })
+
       wx.login({
         success: function (res) {
           console.log(res.code)
           //发送请求
           wx.request({
-            url: 'https://47.99.79.253:8090/unionid', //接口地址
+            url: 'https://szaxr.cn/getSections',
+            data:{},
+            success:function(res){
+              var app = getApp();
+              app.globalData.sections = res.data.data
+            }
+          })
+          wx.request({
+            url: 'https://szaxr.cn/unionid', //接口地址
             data: { code: res.code },
             header: {
               'content-type': 'application/json' //默认值
@@ -80,6 +86,9 @@ Page({
             success: function (res) {
               var app = getApp();
               app.globalData.userId=res.data
+              wx.navigateTo({
+                url: '../all/all',
+              })
             }
           })
         }

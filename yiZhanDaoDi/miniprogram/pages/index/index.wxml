@@ -1,15 +1,21 @@
 <!--index.wxml-->
 <view class="container"  >
 
-  <view>
-  <image  class="beijing" src='beijing.png'></image>
-  </view>
-     
+  <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000'      duration='1000' circular='true'>
+  <block wx:for="{{curSection}}" wx:for-index="index">
+    <swiper-item>
+      <image id='{{item.id}}'src='{{item.url}}' class='u-img-slide' mode='widthFix'                                   bindtap='onTap'></image>
+    </swiper-item>
+  </block>
+</swiper>
+ <text>\n</text>    
+  <text>\n</text>  
+   <text>\n</text>  
   <view  class="four">
   
    <button class="b1"  bindtap='onTapDayWeather'>
      <view class="inner_b1">
-     <view><image class="start"  src='a.png'></image></view>
+     <view><image class="start"  src='aa.png'></image></view>
      <view><text class='ziti'>  开始答题</text></view>
      </view>
    </button>

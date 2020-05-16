@@ -13,7 +13,9 @@ App({
       questions:null,
       question:null,
       q:null,
-      num:0
+      num:0,
+      sections:null,
+      curSectionId:0
     }
   }
 })

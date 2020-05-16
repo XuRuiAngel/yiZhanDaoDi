@@ -3,24 +3,21 @@ const app = getApp()
 
 Page({
   data: {
-  
+     curSection:null
   },
   onLoad:function(){
+    var that = this
+    var index = getApp().globalData.curSectionId;
+    this.setData({
+      curSection: getApp().globalData.sections[index-1].subUrl
+    });
+    console.log(getApp().globalData.userId)
+    console.log(getApp().globalData.curSectionId)
     wx.request({
-      url: 'https://47.99.79.253:8090/getQuestions', //接口地址
-      data: {},
-      header: {
-        'content-type': 'application/json' //默认值
-      },
-      success: function (res) {
-        var app = getApp();
-        app.globalData.question = res.data.data
-      }
-    })
-    wx.request({
-      url: 'https://47.99.79.253:8090/getRecord', //接口地址
+      url: 'https://szaxr.cn/getRecord', //接口地址
       data: {
         userId: parseInt(getApp().globalData.userId),
+        sectionId: getApp().globalData.curSectionId
       },
       method: 'GET',
       header: {
@@ -35,9 +32,21 @@ Page({
     })
   },
   onTapDayWeather: function (e) {
-    wx.navigateTo({
-      url: '../question/question',
+    wx.request({
+      url: 'https://szaxr.cn/getQuestions', //接口地址
+      data: { sectionId: getApp().globalData.curSectionId},
+      header: {
+        'content-type': 'application/json' //默认值
+      },
+      success: function (res) {
+        var app = getApp();
+        app.globalData.question = res.data.data
+        wx.navigateTo({
+          url: '../question/question',
+        })
+      }
     })
+ 
  
   },
 onTapDayWeather2: function (e) {

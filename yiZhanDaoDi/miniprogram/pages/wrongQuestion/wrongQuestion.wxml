@@ -1,7 +1,12 @@
 <!--pages/wrongQuestion/wrongQuestion.wxml-->
+
+<text wx:if='{{showOrHidden}}'>还没有错题哦！</text>
+
 <view class='hua' wx:for="{{questions}}" wx:for-item="item">
        <button id="{{item.questionId}}" bindtap='onTapDayWeather'>
-       <text class='timu'>题目： {{item.content}}</text>
-       <text class='shijian'>时间：{{item.time}}</text>
+       <view class="con">
+       <view><text class='timu'>题目： {{item.content}}</text> </view>
+       <view><text class='shijian'>时间：{{item.time}}</text> </view>
+       </view>
        </button>
 </view>
