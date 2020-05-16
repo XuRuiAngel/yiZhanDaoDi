@@ -20,6 +20,6 @@
     "navigationBarTitleText": "疫站到底",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
+
 }
