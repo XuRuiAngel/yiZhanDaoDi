@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="container"  >
+  <view class="zhuanqu">
+    <text class="zhuanquziti">{{item.name}}</text>
+  </view>
 
   <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000'      duration='1000' circular='true'>
   <block wx:for="{{curSection}}" wx:for-index="index">
