@@ -3,13 +3,15 @@ const app = getApp()
 
 Page({
   data: {
+    name:null,
      curSection:null
   },
   onLoad:function(){
     var that = this
     var index = getApp().globalData.curSectionId;
     this.setData({
-      curSection: getApp().globalData.sections[index-1].subUrl
+      curSection: getApp().globalData.sections[index-1].subUrl,
+      name: getApp().globalData.sections[index-1].name
     });
     console.log(getApp().globalData.userId)
     console.log(getApp().globalData.curSectionId)

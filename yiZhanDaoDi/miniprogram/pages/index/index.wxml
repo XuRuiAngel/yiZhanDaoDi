@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container"  >
-
+  <view class='name'><text>{{name}}</text></view>
   <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000'      duration='1000' circular='true'>
   <block wx:for="{{curSection}}" wx:for-index="index">
     <swiper-item>
@@ -15,14 +15,14 @@
   
    <button class="b1"  bindtap='onTapDayWeather'>
      <view class="inner_b1">
-     <view><image class="start"  src='aa.png'></image></view>
-     <view><text class='ziti'>  开始答题</text></view>
+ <image class="start"  src='aa.png'></image>
+    <text class='ziti'>  开始答题</text>
      </view>
    </button>
    <button class="b1"  bindtap='onTapDayWeather2'>
     <view class="inner_b1">
-     <view><image class="look" src='b.png'></image></view>
-     <view><text class='ziti'>  错题集</text></view>
+     <image class="look" src='b.png'></image>
+     <text class='ziti'>  错题集</text>
       </view>
    </button>
   </view> 
