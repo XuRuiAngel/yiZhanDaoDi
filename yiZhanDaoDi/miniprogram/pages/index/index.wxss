@@ -5,13 +5,14 @@ page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+   background-color: #C0C0C0 ;
 }
 
 
 
 .b1{
   width:50%;
-  height:100px;
+  height:120px;
   border:none;
 }
 .b2{
@@ -55,7 +56,7 @@ page {
 .beijing{
  margin: 0;
  width:750rpx;
- height: 600rpx;
+ height: 100%;
 	border-radius:5px;
 
 }
@@ -67,6 +68,7 @@ page {
   margin: 0;
   padding: 0;
   position: relative;
+ 
 
 }
 
@@ -83,6 +85,10 @@ page {
 }
 
 .name{
+  
    font-size: medium;
+   font-weight: bold;
+   color: 	#808080;
+   font-size: 40rpx;
 
 }

@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container" mode='aspectFill' lazy-load='true' style="background:url('weixin.jpg')" >
+<view class="container" mode='aspectFill' lazy-load='true' style=background:url('weixin.jpg')" >
   <view >
   <text class='name'>{{name}}</text>
   </view>
@@ -17,17 +17,20 @@
   
    <button class="b1"  bindtap='onTapDayWeather'>
      <view class="inner_b1">
- <image class="start"  src='aa.png'></image>
+ <image class="start"  src='aa.jpg'></image>
     <text class='ziti'>  开始答题</text>
      </view>
    </button>
    <button class="b1"  bindtap='onTapDayWeather2'>
     <view class="inner_b1">
-     <image class="look" src='b.png'></image>
+     <image class="look" src='b.jpg'></image>
      <text class='ziti'>  错题集</text>
       </view>
    </button>
+   
   </view> 
+  <text>\n</text>    
+  <text>\n</text>  
    <image src="222.jpg"></image>
 
 </view>
