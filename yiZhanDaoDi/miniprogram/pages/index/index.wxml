@@ -1,6 +1,8 @@
 <!--index.wxml-->
-<view class="container"  >
-  <view class='name'><text>{{name}}</text></view>
+<view class="container" style="background:url('weixin.jpg')" >
+  <view >
+  <text class='name'>{{name}}</text>
+  </view>
   <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000'      duration='1000' circular='true'>
   <block wx:for="{{curSection}}" wx:for-index="index">
     <swiper-item>

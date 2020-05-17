@@ -67,6 +67,7 @@ page {
   margin: 0;
   padding: 0;
   position: relative;
+
 }
 
 .u-wrp-bnr {
@@ -82,5 +83,6 @@ page {
 }
 
 .name{
-  background-color: #899eff;
+   font-size: medium;
+
 }
