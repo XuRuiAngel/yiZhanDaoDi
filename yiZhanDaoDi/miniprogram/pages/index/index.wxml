@@ -25,8 +25,8 @@
      <view><text class='ziti'>  错题集</text></view>
       </view>
    </button>
-  </view>
-
+  </view> 
+   <image src="222.jpg"></image>
 
 </view>
 
