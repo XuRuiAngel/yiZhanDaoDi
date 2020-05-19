@@ -73,5 +73,10 @@ Page({
     wx.navigateTo({
       url: '../index/index',
     })
+  },
+  onTapDayWeather2: function () {
+    wx.navigateTo({
+      url: '../all/all',
+    })
   }
 })

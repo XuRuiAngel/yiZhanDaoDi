@@ -10,7 +10,11 @@
   <view class="r">您共答对{{num}}道题!</view>
   <view class='wu'></view>
   <button class="push_button back" href="#" bindtap='onTapDayWeather'>
-     <text class="ziti"> 确定</text>
+     <text class="ziti"> 返回专区</text>
+  </button>
+  <text>\n</text>
+  <button class="push_button back" href="#" bindtap='onTapDayWeather2'>
+     <text class="ziti"> 返回首页</text>
   </button>
 
   
