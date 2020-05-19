@@ -1,14 +1,14 @@
 {
   "pages": [
-    "pages/my/my",
+ 
     "pages/login/login",
     "pages/index/index",
     "pages/question/question",
     "pages/wrongQuestion/wrongQuestion",
     "pages/wrongQuestion_inner/wrongQuestion_inner",
     "pages/end/end",
-    "pages/all/all"
-   
+    "pages/all/all",
+    "pages/my/my"
     
     
    

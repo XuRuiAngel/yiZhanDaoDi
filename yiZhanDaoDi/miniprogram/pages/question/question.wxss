@@ -156,3 +156,7 @@ width: 100%;
 	background-image:-o-linear-gradient(top, #7373b9, #b8b8dc);
 	background-image:linear-gradient(top, #7373b9, #b8b8dc);
 }
+
+button{
+	width:90%;
+}

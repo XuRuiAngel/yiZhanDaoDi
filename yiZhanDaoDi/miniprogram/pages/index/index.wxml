@@ -11,8 +11,7 @@
   </block>
 </swiper>
  <text>\n</text>    
-  <text>\n</text>  
-   <text>\n</text>  
+
   <view  class="four">
   
    <button class="b1"  bindtap='onTapDayWeather'>
@@ -29,8 +28,7 @@
    </button>
    
   </view> 
-  <text>\n</text>    
-  <text>\n</text>  
+
    <image src="222.jpg"></image>
 
 </view>
