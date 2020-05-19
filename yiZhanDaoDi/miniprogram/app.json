@@ -21,6 +21,26 @@
     "navigationBarTitleText": "疫站到底",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#1E90FF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "image/home.jpg",
+        "iconPath": "image/home.jpg",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/my.jpg",
+        "iconPath": "image/my.jpg",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+     
+    ]
+  }
 
 }
