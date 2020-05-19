@@ -30,7 +30,7 @@
       {
         "selectedIconPath": "image/home.jpg",
         "iconPath": "image/home.jpg",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/all/all",
         "text": "首页"
       },
       {

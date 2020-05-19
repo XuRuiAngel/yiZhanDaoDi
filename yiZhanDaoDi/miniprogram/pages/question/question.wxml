@@ -14,7 +14,6 @@
   <button  href="#" id='D' bindtap="btnOpClick" style="background-color: {{bcD}};" disabled="{{but}}">{{postList[index].content[3]}}</button>
 </scroll-view>
 <button class="push_button red" href="#" bindtap="lastQuestion">上一题</button>
-
 <button class="push_button orange" href="#" bindtap="nextQuestion" disabled="{{next}}">下一题</button>
 
 

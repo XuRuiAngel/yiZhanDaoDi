@@ -86,7 +86,7 @@ Page({
             success: function (res) {
               var app = getApp();
               app.globalData.userId=res.data
-              wx.navigateTo({
+              wx.switchTab({
                 url: '../all/all',
               })
             }
