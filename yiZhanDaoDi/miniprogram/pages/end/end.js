@@ -75,7 +75,7 @@ Page({
     })
   },
   onTapDayWeather2: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../all/all',
     })
   }
