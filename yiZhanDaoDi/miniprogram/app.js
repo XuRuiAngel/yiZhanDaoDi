@@ -9,7 +9,7 @@ App({
     }
 
     this.globalData = {
-      udserId:1,
+      user:1,
       questions:null,
       question:null,
       q:null,

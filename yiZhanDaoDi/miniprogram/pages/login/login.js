@@ -85,7 +85,8 @@ Page({
             },
             success: function (res) {
               var app = getApp();
-              app.globalData.userId=res.data
+              console.log(res.data)
+              app.globalData.user=res.data
               wx.switchTab({
                 url: '../all/all',
               })

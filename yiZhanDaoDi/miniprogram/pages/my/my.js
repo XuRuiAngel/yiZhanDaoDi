@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      user:null
   },
 
   /**
@@ -13,6 +13,10 @@ Page({
    */
   onLoad: function (options) {
 
+    this.setData({
+      user: getApp().globalData.user,
+     
+    });
   },
 
   /**

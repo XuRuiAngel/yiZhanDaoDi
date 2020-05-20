@@ -13,12 +13,11 @@ Page({
       curSection: getApp().globalData.sections[index-1].subUrl,
       name: getApp().globalData.sections[index-1].name
     });
-    console.log(getApp().globalData.userId)
-    console.log(getApp().globalData.curSectionId)
+
     wx.request({
       url: 'https://szaxr.cn/getRecord', //接口地址
       data: {
-        userId: parseInt(getApp().globalData.userId),
+        userId: parseInt(getApp().globalData.user.id),
         sectionId: getApp().globalData.curSectionId
       },
       method: 'GET',

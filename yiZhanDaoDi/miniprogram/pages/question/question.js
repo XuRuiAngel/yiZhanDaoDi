@@ -412,7 +412,7 @@ Page({
       wx.request({
         url: 'https://szaxr.cn/addRecord', //接口地址
         data: {
-          userId: parseInt(getApp().globalData.userId),
+          userId: parseInt(getApp().globalData.user.id),
           questionId: that.data.postList[that.data.index].id,
           content: that.data.postList[that.data.index].name
           },

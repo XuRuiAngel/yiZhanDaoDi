@@ -14,34 +14,34 @@
   <!-- 第三部分 -->
   <view class="view_3">
     <view class="list-item">
-      <image class="item-image" src="../images/test5.png"></image>
-      <text class="item-text">我的收藏</text>
-      <image class="image-jiantou" src="../images/jiantou.png"></image>
+      <image class="item-image" src="../../image/xingbie.jpg"></image>
+      <text class="item-text" >性别:</text>  
+      <text class="item-text" >{{user.sex}}</text>
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
     <view class="list-item">
-      <image class="item-image" src="../images/test6.png"></image>
-      <text class="item-text">我的评价</text>
-      <image class="image-jiantou" src="../images/jiantou.png"></image>
+      <image class="item-image" src="../../image/touxian.jpg"></image>
+      <text class="item-text">头衔:</text>
+      <text class="item-text" >{{user.title}}</text>
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
     <view class="list-item">
-      <image class="item-image" src="../images/test8.png"></image>
-      <text class="item-text">版本更新</text>
-      <image class="image-jiantou" src="../images/jiantou.png"></image>
+      <image class="item-image" src="../../image/dianhua.jpg"></image>
+      <text class="item-text">电话:</text>
+      <text class="item-text" >{{user.tel}}</text>
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
     <view class="list-item">
-      <image class="item-image" src="../images/test9.png"></image>
-      <text class="item-text">售后记录</text>
-      <image class="image-jiantou" src="../images/jiantou.png"></image>
+      <image class="item-image" src="../../image/jinbi.jpg"></image>
+      <text class="item-text">得分:</text>
+      <text class="item-text" >{{user.score}}</text>
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
-    <view class="list-item">
-      <image class="item-image" src="../images/test12.png"></image>
-      <text class="item-text">分享邀请</text>
-      <image class="image-jiantou" src="../images/jiantou.png"></image>
-    </view>
+
     <view class="line"></view>
   </view>
 </view>
