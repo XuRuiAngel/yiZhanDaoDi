@@ -4,7 +4,7 @@
 <view class="drawer_title">修改基本信息</view>
 <view class='drawer_content'>
 <text class='titleMsg'>{{titleMsg}}</text>
-<input class="input_base" hidden='{{inputHidden}}' bindinput="bindKeyInput" value="{{inputValue}}" maxlength='10' auto-focus='autofocus'
+<input class="input_base" hidden='{{inputHidden}}' bindinput="bindKeyInput" value="{{inputValue}}" maxlength='11' auto-focus='autofocus'
 placeholder='{{inputPlaceHalder}}' />
 </view>
 <view class='sureQuery'>

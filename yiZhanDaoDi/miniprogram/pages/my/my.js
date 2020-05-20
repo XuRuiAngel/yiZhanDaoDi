@@ -171,5 +171,10 @@ Page({
         titleMsg: msg,
         inputHidden: false,
         })
+    },
+    touxian:function(){
+      wx.navigateTo({
+        url: '../title/title',
+      })
     }
 })
