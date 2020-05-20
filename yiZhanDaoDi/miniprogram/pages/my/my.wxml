@@ -21,7 +21,7 @@
       <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
-    <view id="title" class="list-item" bindtap="change">
+    <view id="title" class="list-item" bindtap="touxian">
       <image class="item-image" src="../../image/touxian.jpg"></image>
       <text class="item-text">头衔:</text>
       <text class="item-text" >{{title}}</text>
@@ -39,7 +39,7 @@
       <image class="item-image" src="../../image/jinbi.jpg"></image>
       <text class="item-text">得分:</text>
       <text class="item-text" >{{score}}</text>
-      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
+    
 
 
      
