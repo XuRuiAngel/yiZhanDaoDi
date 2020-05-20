@@ -10,38 +10,39 @@
     </view>
   </view>
   <!-- 第二部分 -->
+   <dialog id="test" bind:determineevent="onMyEvent" bind:cancleevent="cancleBtn" dialog-hidden="{{isHidden}}" title-msg="{{titleMsg}}" input-hidden="{{inputHidden}}" cancle-btn="{{cancleBtn}}" input-place-halder="{{inputPlaceHolder}}" />
 
   <!-- 第三部分 -->
   <view class="view_3">
-    <view class="list-item">
+    <view id="sex" class="list-item" bindtap="change">
       <image class="item-image" src="../../image/xingbie.jpg"></image>
       <text class="item-text" >性别:</text>  
-      <text class="item-text" >{{user.sex}}</text>
+      <text class="item-text" >{{sex}}</text>
       <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
-    <view class="list-item">
+    <view id="title" class="list-item" bindtap="change">
       <image class="item-image" src="../../image/touxian.jpg"></image>
       <text class="item-text">头衔:</text>
-      <text class="item-text" >{{user.title}}</text>
+      <text class="item-text" >{{title}}</text>
       <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
-    <view class="list-item">
+    <view id="tel" class="list-item" bindtap="change">
       <image class="item-image" src="../../image/dianhua.jpg"></image>
       <text class="item-text">电话:</text>
-      <text class="item-text" >{{user.tel}}</text>
+      <text class="item-text" >{{tel}}</text>
       <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
     </view>
     <view class="line"></view>
-    <view class="list-item">
+    <view id="score" class="list-item" >
       <image class="item-image" src="../../image/jinbi.jpg"></image>
       <text class="item-text">得分:</text>
-      <text class="item-text" >{{user.score}}</text>
+      <text class="item-text" >{{score}}</text>
       <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
-      <image class="item-image" src="../images/test9.png"></image>
-      <text class="item-text">我的头衔</text>
-      <image class="image-jiantou" src="../images/jiantou.png"></image>
+
+
+     
     </view>
     <view class="line"></view>
 

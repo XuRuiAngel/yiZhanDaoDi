@@ -67,7 +67,7 @@ Page({
 
       wx.login({
         success: function (res) {
-          console.log(res.code)
+   
           //发送请求
           wx.request({
             url: 'https://szaxr.cn/getSections',
@@ -85,7 +85,7 @@ Page({
             },
             success: function (res) {
               var app = getApp();
-              console.log(res.data)
+        
               app.globalData.user=res.data
               wx.switchTab({
                 url: '../all/all',
