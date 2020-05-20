@@ -31,15 +31,13 @@ width: 100%;
 }
 
 .push_button {
-	position: relative;
 	width:300px;
 	height:40px;
 	text-align:center;
 	color:#FFF;
-	text-decoration:none;
 	line-height:20px;
 	font-family:'Oswald', Helvetica;
-	display: block;
+	display: flex;
 	margin: 10px;
 }
 .push_button:before {
