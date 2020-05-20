@@ -8,6 +8,8 @@
   <view class='wuyong'></view>
   <view class="c"><text>恭喜通过</text></view>
   <view class="r">您共答对{{num}}道题!</view>
+  <text>\n</text>
+  <view class="r">本轮获得{{num}}金币!</view>
   <view class='wu'></view>
   <button class="push_button back" href="#" bindtap='onTapDayWeather'>
      <text class="ziti"> 返回专区</text>
