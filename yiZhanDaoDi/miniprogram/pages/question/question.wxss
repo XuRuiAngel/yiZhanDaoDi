@@ -37,8 +37,8 @@ width: 100%;
 	color:#FFF;
 	line-height:20px;
 	font-family:'Oswald', Helvetica;
-	display: flex;
-	margin: 10px;
+	display: block;
+
 }
 .push_button:before {
 	background:#f0f0f0;
