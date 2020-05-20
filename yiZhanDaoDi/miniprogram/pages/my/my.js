@@ -94,7 +94,7 @@ Page({
        sex:info
     })
     wx.request({
-      url: 'https://127.0.0.1:443/sex',
+      url: 'https://szaxr.cn/sex',
       data:{
         id:getApp().globalData.user.id,
         sex:info
