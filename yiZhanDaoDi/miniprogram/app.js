@@ -15,7 +15,8 @@ App({
       q:null,
       num:0,
       sections:null,
-      curSectionId:0
+      curSectionId:0,
+      title:null
     }
   }
 })

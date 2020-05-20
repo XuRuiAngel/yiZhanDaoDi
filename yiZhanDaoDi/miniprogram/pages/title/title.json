@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "dialog2":"../../component/dialog2/dialog2"
+  }
 }

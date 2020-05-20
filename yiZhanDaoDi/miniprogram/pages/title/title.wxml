@@ -1,1 +1,27 @@
+    <dialog2 id="test" bind:determineevent="onMyEvent" bind:cancleevent="cancleBtn" dialog-hidden="{{isHidden}}" title-msg="{{titleMsg}}" input-hidden="{{inputHidden}}" cancle-btn="{{cancleBtn}}" input-place-halder="{{inputPlaceHolder}}" />
+ <view class="line"></view>
+    <view id="pingmin" class="list-item" bindtap="buy">
+     <image class="item-image" src="../../image/touxian.jpg"></image>
+      <text class="item-text">头衔:平民(需要100积分)</text>
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
+</view>
+     <view class="line"></view>
+    <view id="yatou" class="list-item" bindtap="buy">
+      <image class="item-image" src="../../image/touxian.jpg"></image>
+      <text class="item-text">头衔:丫头(需要100积分)</text>
 
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
+    </view>
+     <view class="line"></view>
+    <view id="fupo" class="list-item" bindtap="buy">
+      <image class="item-image" src="../../image/touxian.jpg"></image>
+      <text class="item-text">头衔:小富婆(需要300积分)</text>
+
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
+    </view>
+     <view class="line"></view>
+    <view id="gongju" class="list-item" bindtap="buy">
+      <image class="item-image" src="../../image/touxian.jpg"></image>
+      <text class="item-text">头衔:小公举(需要300积分)</text>
+      <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
+    </view>
