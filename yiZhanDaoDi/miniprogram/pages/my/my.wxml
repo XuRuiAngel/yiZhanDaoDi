@@ -39,6 +39,9 @@
       <text class="item-text">得分:</text>
       <text class="item-text" >{{user.score}}</text>
       <image class="image-jiantou" src="../../image/jiantou.jpg"></image>
+      <image class="item-image" src="../images/test9.png"></image>
+      <text class="item-text">我的头衔</text>
+      <image class="image-jiantou" src="../images/jiantou.png"></image>
     </view>
     <view class="line"></view>
 
