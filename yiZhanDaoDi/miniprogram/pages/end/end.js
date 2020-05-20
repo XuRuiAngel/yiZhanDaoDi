@@ -15,10 +15,22 @@ Page({
     this.setData({
       num: getApp().globalData.num,
     });
+    getApp().globalData.user.score=getApp().globalData.user.score+this.data.num
+    wx.request({
+      url: 'https://szaxr.cn/score',
+      data:{
+        id:getApp().globalData.user.id,
+        score:this.data.num
+      },
+      success:function(res){
+
+      }
+    })
    this.num = getApp().globalData.num;
-    console.log(getApp().globalData.num)
-    console.log(this.num)
+
     getApp().globalData.num=0;
+   
+
   },
 
   /**
