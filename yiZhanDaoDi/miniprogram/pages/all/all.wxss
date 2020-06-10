@@ -1,15 +1,20 @@
 /* pages/all/all.wxss */
 page.top { 
 
-  background-color:rgba(230, 49, 49, 0.884)     /* 你要设置的颜色 */
+  background-color:#c0c0c0  ;   /* 你要设置的颜色 */
 
+}
+.all{
+  background-color:#c0c0c0  ;
+  height: 100%;
+  width: 100%;
 }
 .u-wrp-bnr {
   width: 100%;
   display: block;
   position: relative;
   top: 10rpx;
-  background: #f0f0f0;
+  background: #c0c0c0;
 }
 .item {
   display: flex;
@@ -27,8 +32,8 @@ page.top {
   width: 90%;
   height: 250rpx;
   margin-top: 20rpx;
-  background-color: burlywood;
-  color: white;
+  background-color: #008B8B;
+  color:#FFE4B5;
   display: flex;
   flex-direction: row;
   align-items: center;

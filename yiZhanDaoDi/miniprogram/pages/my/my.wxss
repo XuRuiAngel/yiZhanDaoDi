@@ -16,7 +16,7 @@ page {
   justify-content: center;
   width: 100%;
   height: 25%;
-  background: #a0deee;
+  background: #008B8B;
 }
 
 .view_image_text {

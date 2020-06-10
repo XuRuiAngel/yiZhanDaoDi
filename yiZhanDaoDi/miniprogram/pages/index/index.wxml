@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container" mode='aspectFill' lazy-load='true' style=background:url('weixin.jpg')" >
+<view class="container" mode='aspectFill' lazy-load='true'  >
   <view >
   <text class='name'>{{name}}</text>
   </view>

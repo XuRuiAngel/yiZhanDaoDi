@@ -1,19 +1,23 @@
 
 <!--pages/question/question.wxml-->
-<image class='background' src="star.png" mode="aspectFill"></image>
-<view >
 
+
+<view class="beijing">
+<text>\n</text>
 <scroll-view>
   <view class='timuziti'>(单选){{index+1}}.{{postList[index].name}}</view>
 
 </scroll-view>
+<text>\n</text>
 <scroll-view>
   <button href="#" id='A' bindtap="btnOpClick" style="background-color: {{bcA}};" disabled="{{but}}">{{postList[index].content[0]}}</button>
   <button href="#" id='B' bindtap="btnOpClick" style="background-color: {{bcB}};" disabled="{{but}}">{{postList[index].content[1]}}</button>
   <button href="#" id='C' bindtap="btnOpClick" style="background-color: {{bcC}};" disabled="{{but}}">{{postList[index].content[2]}}</button>
   <button  href="#" id='D' bindtap="btnOpClick" style="background-color: {{bcD}};" disabled="{{but}}">{{postList[index].content[3]}}</button>
 </scroll-view>
-<button class="push_button red" href="#" bindtap="lastQuestion">上一题</button>
+
+<text>\n</text>
+<button class="push_button blue" href="#" bindtap="lastQuestion">上一题</button>
 <button class="push_button orange" href="#" bindtap="nextQuestion" disabled="{{next}}">下一题</button>
 
 

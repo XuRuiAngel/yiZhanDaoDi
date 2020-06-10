@@ -1,4 +1,6 @@
 
+    <view class="all">
+   
     <view class="userinfo">
       <view class="userinfo-avatar">
         <open-data  type="userAvatarUrl"></open-data>
@@ -6,11 +8,16 @@
       </view>
         <open-data type="userNickName"></open-data>
     </view>
+     <image class="photo" src="shouye.jpg"></image>
+     <text>\n</text>
+     <text>\n</text>
+     <text>\n</text>
     <view>
 
-         <button bindtap='onTapDayWeather'>进入小程序</button>
+         <button class="but" bindtap='onTapDayWeather'>进入小程序</button>
     </view>
     
     <view class=" " style="width:1200rpx;height:100vh;">
       <canvas canvas-id="canvas" style="width:1200rpx;height:100vh;"></canvas>
+    </view>
     </view>

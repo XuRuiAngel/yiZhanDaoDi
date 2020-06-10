@@ -1,4 +1,5 @@
 <!--pages/all/all.wxml-->
+<view class="all">
 <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
   <block wx:for="{{sections}}" wx:for-index="index">
     <swiper-item class="item">
@@ -15,4 +16,6 @@
        <image class='img' mode='widthFix' src='{{item.mainUrl}}'></image>   
        </view>
        </button>
+</view>
+
 </view>
