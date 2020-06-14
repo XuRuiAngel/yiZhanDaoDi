@@ -16,6 +16,27 @@ Page({
     this.setData({
       sections: getApp().globalData.sections
     });
+
+    wx.request({
+      url: 'https://127.0.0.1:443/news',
+      data:{},
+      success:function(res){
+
+        var app = getApp();
+        app.globalData.news = res.data.newslist[0].news
+      }
+    })
+
+    wx.request({
+      url: 'https://127.0.0.1:443/china',
+      data:{},
+      success:function(res){
+        console.log(res.data.data)
+        var app = getApp();
+        app.globalData.china = res.data.data
+      }
+    })
+    
   },
 
   /**

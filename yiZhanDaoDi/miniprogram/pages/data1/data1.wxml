@@ -1,0 +1,22 @@
+<!--pages/data1/data1.wxml-->
+<text>全国疫情数据</text>
+
+<text>累计确诊病例数 {{china.confirmedCount}}</text>
+<text>新增确诊病例数 {{china.confirmedAdd}}</text>
+<text>现存确诊病例数 {{china.currentConfirmedCount}}</text>
+<text>疑似病例数 {{china.suspectedCount}}</text>
+<text>疑似新增病例数 {{china.suspectedAdd}}</text>
+<text>累计治愈病例数 {{china.curedCount}}</text>
+<text>新增治愈病例数 {{china.curedAdd}}</text>
+<text>累计死亡病例数  {{china.deadCount}}</text>
+<text>新增死亡病例数  {{china.deathAdd}}</text>
+
+
+<button>查询同区确诊地点 </button>
+
+<view class="tui-picker-content">
+  <view class="tui-picker-name">省市区三级联动选择</view>
+  <picker bindchange="changeRegin" mode = "region" value="{{region}}">
+    <view class="tui-picker-detail">{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
+  </picker>
+</view>

@@ -1,2 +1,13 @@
 <!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+<view class='hua'  wx:for="{{news}}" wx:for-item="item">
+       <button class="but" id="{{index}}" bindtap='onTapDayWeather'>
+      
+       <view class="container">
+        <view><image  mode='widthFix' class="img" src='news_image.jpg'></image></view>
+        <view class="title-container"><text class="title">{{item.title}}</text></view>
+        <view class="data-container">
+        <text class="date">来源:{{item.infoSource}}       时间:{{item.pubDateStr}}</text>
+        </view>
+        </view>
+       </button>
+</view>

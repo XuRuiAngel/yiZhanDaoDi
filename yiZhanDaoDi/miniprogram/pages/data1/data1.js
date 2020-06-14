@@ -1,20 +1,23 @@
-// pages/news/news.js
+// pages/data1/data1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-        news:null
+        china:null,
+        region: ["陕西省", "西安市", "长安区"],
+        multiArray3: [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]],
+        multiIndex3: [3, 5, 4]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      news: getApp().globalData.news
-    })
+          this.setData({
+            china:getApp().globalData.china
+          })
   },
 
   /**
@@ -65,11 +68,11 @@ Page({
   onShareAppMessage: function () {
 
   },
-  onTapDayWeather:function(e){
-
-     getApp().globalData.new=getApp().globalData.news[e.currentTarget.id]
-     wx.navigateTo({
-      url: '../news_inner/news_inner',
-    })
+  changeRegin(e){
+    this.setData({ region: e.detail.value });
+  },
+  
+  changeMultiPicker3(e) {
+    this.setData({ multiIndex3: e.detail.value })
   }
 })

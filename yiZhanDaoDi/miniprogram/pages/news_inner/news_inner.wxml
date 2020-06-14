@@ -1,0 +1,11 @@
+<!--pages/newsInner/news_inner.wxml-->
+<view class="container">
+ <view><text class="title">{{new.title}}</text></view>
+
+<view><text class="date">来源:{{new.infoSource}}  时间: {{new.pubDateStr}}</text></view>
+<text>\n</text>
+<text>\n</text>
+<view class="summary-container"><text class="summary">{{new.summary}}</text></view>
+
+</view>
+

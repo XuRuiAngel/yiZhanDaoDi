@@ -1,20 +1,18 @@
-// pages/news/news.js
+// pages/new_inner/news_inner.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-        news:null
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      news: getApp().globalData.news
-    })
+
   },
 
   /**
@@ -64,12 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  onTapDayWeather:function(e){
-
-     getApp().globalData.new=getApp().globalData.news[e.currentTarget.id]
-     wx.navigateTo({
-      url: '../news_inner/news_inner',
-    })
   }
 })

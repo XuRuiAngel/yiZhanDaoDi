@@ -11,7 +11,8 @@
     "pages/my/my",
     "pages/title/title",
     "pages/news/news",
-    "pages/data/data"
+    "pages/data1/data1",
+    "pages/news_inner/news_inner"
     
     
    
@@ -39,7 +40,7 @@
       {
         "selectedIconPath": "image/shuju.jpg",
         "iconPath": "image/shuju.jpg",
-        "pagePath": "pages/data/data",
+        "pagePath": "pages/data1/data1",
         "text": "数据"
       },
       {

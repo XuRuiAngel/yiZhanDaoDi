@@ -16,7 +16,10 @@ App({
       num:0,
       sections:null,
       curSectionId:0,
-      title:null
+      title:null,
+      news:null,
+      new:null,
+      china:null
     }
   }
 })

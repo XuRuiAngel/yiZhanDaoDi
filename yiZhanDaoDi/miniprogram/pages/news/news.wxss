@@ -1,1 +1,39 @@
 /* pages/news/news.wxss */
+.but{
+  width: 90%;
+  height: 400rpx;
+  margin-top: 20rpx;
+  background-color: #008B8B;
+  color:#FFE4B5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hua{
+  width: 100%;
+  display: flex;
+}
+.title{
+   font-size: 15px;
+   text-align:left;
+   line-height:2px;
+}
+
+.img{
+
+}
+.container{
+  display: flex;
+
+
+}
+
+.date{
+  font-size: 10px;
+
+}
+.title-container{
+  line-height:15px;
+}
