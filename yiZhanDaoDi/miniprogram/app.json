@@ -9,7 +9,9 @@
     "pages/end/end",
     "pages/all/all",
     "pages/my/my",
-    "pages/title/title"
+    "pages/title/title",
+    "pages/news/news",
+    "pages/data/data"
     
     
    
@@ -33,6 +35,18 @@
         "iconPath": "image/home.jpg",
         "pagePath": "pages/all/all",
         "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/shuju.jpg",
+        "iconPath": "image/shuju.jpg",
+        "pagePath": "pages/data/data",
+        "text": "数据"
+      },
+      {
+        "selectedIconPath": "image/news.jpg",
+        "iconPath": "image/news.jpg",
+        "pagePath": "pages/news/news",
+        "text": "新闻"
       },
       {
         "selectedIconPath": "image/my.jpg",
