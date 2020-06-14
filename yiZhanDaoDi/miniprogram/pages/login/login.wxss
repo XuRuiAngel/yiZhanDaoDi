@@ -37,7 +37,7 @@
   text-shadow:-1px -1px 0 #3f3d3d;
 	background: rgb(141, 141, 140);
 	border:1px solid rgb(141, 141, 140);
-  width: 90%;
+  width: 50%;
 	
 	background-image:-webkit-linear-gradient(top,  rgb(231, 230, 229), rgb(141, 141, 140));
 	background-image:-moz-linear-gradient(top,  rgb(231, 230, 229)c, rgb(141, 141, 140));
@@ -64,7 +64,7 @@
 .photo{
    align-items: center;
    justify-content: center;
-   width:90%;
-   padding-left: 40rpx;
+   width:70%;
+   padding-left: 110rpx;
    
 }

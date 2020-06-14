@@ -6,7 +6,7 @@
   </picker>
 </view>
 
-<button bindtap='onTapDayWeather' >确定</button>
+<button class='but' bindtap='onTapDayWeather' >确定</button>
 
 <view class="container" wx:if="{{text1}}"><text>该地区目前无确诊病例</text></view>
 
