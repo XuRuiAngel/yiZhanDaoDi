@@ -8,8 +8,10 @@
       </view>
         <open-data type="userNickName"></open-data>
     </view>
-     <image class="photo" src="shouye.jpg"></image>
      <text>\n</text>
+      <text>\n</text>
+     <image class="photo" src="shouye.jpg"></image>
+    
      <text>\n</text>
      <text>\n</text>
     <view>

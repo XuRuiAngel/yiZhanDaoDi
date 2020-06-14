@@ -35,31 +35,31 @@
 .but{
   color:#fff;
   text-shadow:-1px -1px 0 #3f3d3d;
-	background: #FFA07A;
-	border:1px solid#FFA07A;
+	background: rgb(141, 141, 140);
+	border:1px solid rgb(141, 141, 140);
   width: 90%;
 	
-	background-image:-webkit-linear-gradient(top,  rgb(250, 187, 162), #FFA07A);
-	background-image:-moz-linear-gradient(top,  rgb(250, 187, 162)c, #FFA07A);
-	background-image:-ms-linear-gradient(top,  rgb(250, 187, 162), #FFA07A);
-	background-image:-o-linear-gradient(top,  rgb(250, 187, 162), #FFA07A);
-	background-image:linear-gradient(to bottom,  rgb(250, 187, 162), #FFA07A);
+	background-image:-webkit-linear-gradient(top,  rgb(231, 230, 229), rgb(141, 141, 140));
+	background-image:-moz-linear-gradient(top,  rgb(231, 230, 229)c, rgb(141, 141, 140));
+	background-image:-ms-linear-gradient(top,  rgb(231, 230, 229), rgb(141, 141, 140));
+	background-image:-o-linear-gradient(top,  rgb(231, 230, 229), rgb(141, 141, 140));
+	background-image:linear-gradient(to bottom,  rgb(231, 230, 229), rgb(141, 141, 140));
 	
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
 	
-	-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #FFA07A, 0 4px 2px rgba(0, 0, 0, .5);
-	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #FFA07A, 0 4px 2px rgba(0, 0, 0, .5);
-	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #FFA07A, 0 4px 2px rgba(0, 0, 0, .5);
+	-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(141, 141, 140), 0 4px 2px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(141, 141, 140), 0 4px 2px rgba(0, 0, 0, .5);
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(141, 141, 140), 0 4px 2px rgba(0, 0, 0, .5);
 }
 .but:hover{
   background: #fff;
-	background-image:-webkit-linear-gradient(top, #FFA07A,  rgb(250, 187, 162));
-	background-image:-moz-linear-gradient(top, #FFA07A,  rgb(250, 187, 162));
-	background-image:-ms-linear-gradient(top, #FFA07A,  rgb(250, 187, 162));
-	background-image:-o-linear-gradient(top, #FFA07A, rgb(250, 187, 162) );
-	background-image:linear-gradient(top, #FFA07A, rgb(250, 187, 162));
+	background-image:-webkit-linear-gradient(top, rgb(141, 141, 140),  rgb(231, 230, 229));
+	background-image:-moz-linear-gradient(top, rgb(141, 141, 140),  rgb(231, 230, 229));
+	background-image:-ms-linear-gradient(top, rgb(141, 141, 140),  rgb(231, 230, 229));
+	background-image:-o-linear-gradient(top, rgb(141, 141, 140), rgb(231, 230, 229) );
+	background-image:linear-gradient(top, rgb(141, 141, 140), rgb(231, 230, 229));
 }
 .photo{
    align-items: center;
