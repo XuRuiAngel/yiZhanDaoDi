@@ -1,22 +1,75 @@
 <!--pages/data1/data1.wxml-->
-<text>全国疫情数据</text>
+ <view class="ctitle"><view class="title"> <text>全国疫情数据</text> </view></view>
+<view class="table">
+<block>
+    <view class="tr">
+      <view class="td">累计确诊病例数</view>
+      <view class="td">{{china.confirmedCount}}</view>
+    </view>
+  </block>
+  <block>
+    <view class="tr">
+      <view class="td">新增确诊病例数</view>
+      <view class="td">{{china.confirmedAdd}}</view>
+    </view>
+  </block>
+  <block>
+    <view class="tr">
+      <view class="td">现存确诊病例数</view>
+      <view class="td">{{china.currentConfirmedCount}}</view>
+    </view>
+  </block>
+  <block>
+    <view class="tr">
+      <view class="td">疑似病例数</view>
+      <view class="td">{{china.suspectedCount}}</view>
+    </view>
+  </block>
 
-<text>累计确诊病例数 {{china.confirmedCount}}</text>
-<text>新增确诊病例数 {{china.confirmedAdd}}</text>
-<text>现存确诊病例数 {{china.currentConfirmedCount}}</text>
-<text>疑似病例数 {{china.suspectedCount}}</text>
-<text>疑似新增病例数 {{china.suspectedAdd}}</text>
-<text>累计治愈病例数 {{china.curedCount}}</text>
-<text>新增治愈病例数 {{china.curedAdd}}</text>
-<text>累计死亡病例数  {{china.deadCount}}</text>
-<text>新增死亡病例数  {{china.deathAdd}}</text>
+    <block>
+    <view class="tr">
+      <view class="td">疑似新增病例数</view>
+      <view class="td">{{china.suspectedAdd}}</view>
+    </view>
+  </block>
+
+     <block>
+    <view class="tr">
+      <view class="td">累计治愈病例数</view>
+      <view class="td">{{china.curedCount}}</view>
+    </view>
+  </block>
+
+       <block>
+    <view class="tr">
+      <view class="td">新增治愈病例数</view>
+      <view class="td">{{china.curedAdd}}</view>
+    </view>
+  </block>
+
+        <block>
+    <view class="tr">
+      <view class="td">累计死亡病例数</view>
+      <view class="td"> {{china.deadCount}}</view>
+    </view>
+  </block>
 
 
-<button>查询同区确诊地点 </button>
+      <block>
+    <view class="tr">
+      <view class="td">新增死亡病例数</view>
+      <view class="td">{{china.deathAdd}}</view>
+    </view>
+  </block>
 
-<view class="tui-picker-content">
-  <view class="tui-picker-name">省市区三级联动选择</view>
-  <picker bindchange="changeRegin" mode = "region" value="{{region}}">
-    <view class="tui-picker-detail">{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
-  </picker>
-</view>
+
+ </view> 
+
+
+
+
+<view class="container"><canvas class="c" canvas-id="canvas1"></canvas></view>
+<button bindtap='onTapDayWeather'>查询同区确诊情况>></button>
+
+
+

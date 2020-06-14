@@ -12,7 +12,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      
+    wx.request({
+      url: 'https://szaxr.cn/news',
+      data:{},
+      success:function(res){
+
+        var app = getApp();
+        app.globalData.news = res.data.newslist[0].news
+      }
+    })
+
+    wx.request({
+      url: 'https://szaxr.cn/china',
+      data:{},
+      success:function(res){
+        console.log(res.data.data)
+        var app = getApp();
+        app.globalData.china = res.data.data
+      }
+    })
   },
 
   /**

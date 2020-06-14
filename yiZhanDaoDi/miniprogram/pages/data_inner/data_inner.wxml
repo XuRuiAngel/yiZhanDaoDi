@@ -1,0 +1,19 @@
+<!--pages/data_inner/data_inner.wxml-->
+<view class="tui-picker-content">
+  <view class="tui-picker-name">查询同区确诊地点</view>
+  <picker bindchange="changeRegin" mode = "region" value="{{region}}">
+    <view class="tui-picker-detail">{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
+  </picker>
+</view>
+
+<button bindtap='onTapDayWeather' >确定</button>
+
+<view class="container" wx:if="{{text1}}"><text>该地区目前无确诊病例</text></view>
+
+<view class="c">
+<view class="container" wx:if="{{text2}}" wx:for="{{newslist}}" wx:for-item="item">
+    <view> <text>区域:  {{item.locale}} </text> </view>
+   <view>  <text>确切位置:  {{item.address}} </text> </view>
+     <text>\n</text>
+</view>
+</view>

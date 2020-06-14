@@ -1,43 +1,31 @@
-// pages/data1/data1.js
+// pages/data_inner/data_inner.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  
   data: {
-        china:null,
-        region: ["陕西省", "西安市", "长安区"],
-        multiArray3: [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]],
-        multiIndex3: [3, 5, 4]
+    region: ["陕西省", "西安市", "长安区"],
+    multiArray3: [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]],
+    multiIndex3: [3, 5, 4],
+    text1:false,
+    text2:false,
+    newslist:null
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-          this.setData({
-            china:getApp().globalData.china
-          })
-          var num1=this.data.china.currentConfirmedCount
-          var num2=this.data.china.curedCount
-          var num3=this.data.china.deadCount
-          let Charts = require('./../../utils/wxcharts-min.js');
-          new Charts({
-            canvasId: 'canvas1',
-            type: 'pie',
-            series: [{ name: '现存确诊病例数', data: num1 }, { name: '累计治愈病例数', data: num2 }, { name: '累计死亡病例数', data: num3 }],
-            width: 640,
-            height: 400,
-            dataLabel: true,
-          });
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
- 
+
   },
 
   /**
@@ -90,8 +78,31 @@ Page({
   },
 
   onTapDayWeather:function(e){
-    wx.navigateTo({
-      url: '../data_inner/data_inner',
-    })
+
+      let that=this
+      wx.request({
+        url: 'https://szaxr.cn/city',
+        data:{
+          city:that.data.region[1],
+          district:that.data.region[2],
+          province:that.data.region[0]
+
+        },
+        success: function (res){
+          if(res.data.code==250){
+            that.setData({
+              text1:true,
+              text2:false
+            })
+          }else if(res.data.code==200){
+            that.setData({
+              newslist:res.data.newslist,
+              text2:true,
+              text1:false
+            })
+          }
+        }
+      })
   }
+
 })
