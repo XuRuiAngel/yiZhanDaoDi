@@ -17,7 +17,7 @@
    <button class="b1"  bindtap='onTapDayWeather'>
      <view class="inner_b1">
  <image class="start"  src='aa.jpg'></image>
-    <text class='ziti'>  开始答题</text>
+    <text class='ziti'>开始答题</text>
      </view>
    </button>
    <button class="b1"  bindtap='onTapDayWeather2'>
