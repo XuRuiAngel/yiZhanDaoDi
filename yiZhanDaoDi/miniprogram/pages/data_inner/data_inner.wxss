@@ -17,7 +17,7 @@
 }
 
 .container{
-  width: 90%;
+  width: 100%;
   margin-top: 20rpx;
   background-color: #008B8B;
   color:#FFE4B5;
