@@ -71,7 +71,8 @@
 
 
 <view class="container"><canvas class="c" canvas-id="canvas1"></canvas></view>
-<button bindtap='onTapDayWeather'>查询同区确诊情况>></button>
-
+<text>\n</text>
+<text>\n</text>
+<view><button bindtap='onTapDayWeather'>查询同区确诊情况>></button></view>
 
 

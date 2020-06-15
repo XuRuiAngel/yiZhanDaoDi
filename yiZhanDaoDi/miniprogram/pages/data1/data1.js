@@ -27,8 +27,8 @@ Page({
             canvasId: 'canvas1',
             type: 'pie',
             series: [{ name: '现存确诊病例数', data: num1 }, { name: '累计治愈病例数', data: num2 }, { name: '累计死亡病例数', data: num3 }],
-            width: 640,
-            height: 400,
+            width: 280,
+            height: 200,
             dataLabel: true,
           });
   },

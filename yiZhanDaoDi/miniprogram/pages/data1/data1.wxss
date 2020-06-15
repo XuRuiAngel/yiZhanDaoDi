@@ -17,19 +17,22 @@
 }
 
 .c {
-  width: 640px;
-  height: 400px;
+  width: 250px;
+  height: 200px;
   transform: scale(0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;  
+  position: relative;
+  left: auto;
   
 }
 .container{
   display: flex;
+  justify-content:left;
+}
+
+.con{
+  display: flex;
   align-items: center;
   justify-content: center;  
-  font-size: 12px;
 }
 
 .title{
